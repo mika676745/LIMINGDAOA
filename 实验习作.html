@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>实验习作</title>
+		<link href="css/目录设置.css" rel="stylesheet" type="text/css"/>
+		<style>
+			#box{
+				width:1675px;
+				height: 50px;
+				background-color: #88B788;
+				margin: 20px 0 100px 0;
+			}
+			
+			.syxztupian{
+				width: 100%;
+				height: 1000px;
+				background-color: #F4FDF4;
+				display: flex;
+				flex-wrap: wrap;/*换行*/
+				align-content: flex-start;
+				padding-left:50px;
+				padding-right: 50px;
+				margin-bottom: 100px;
+			}
+			.yigetu{
+				
+				margin: 20px;
+				
+			}
+			.zezao{
+				width: 300px;
+				height: 400px;
+				margin: 20px;
+				background-image: url("img/门神.png");
+				background-repeat: no-repeat;
+				background-size: cover;
+				overflow: hidden;
+				position: relative;
+			}
+			.zezao hgroup{
+				width: 300px;
+				height: 400px;
+				background-color: rgba(0,0,0,0.5);
+				position: absolute;
+				left: 0px;
+				top: -400px;
+			}
+			.zezao:hover hgroup{
+				position: absolute;/*定位*/
+				left: 0px;
+				top: 0px;
+				transition-property: all;
+				transition-duration: 2s;
+				transition-timing-function: ease-in-out;
+			}
+			.zezao hgroup h2:nth-child(1){
+				text-align: center;
+				color: white;
+				font-size: 70px;
+				font-family: "黑体";
+			}
+			.zezao hgroup h2:nth-child(2){
+				text-align: center;
+				color: white;
+				font-size: 50px;
+				font-family: "黑体";
+			}
+			nav{
+				width: 100%;
+				height: 50px;
+				background-color: #88B788;
+				text-align: center;
+				margin-top: 20px;
+				margin-bottom: 70px;
+			}
+			li{
+				list-style-type: none;
+				height: 150px;
+				padding-left: 80px;/*内边距：左边的高度(字体之间的距离)*/
+				padding-top: -10px;/*内边距：上方的高度（指字体）*/
+				font-size: 40px;/*字体的大小*/
+				display: inline-block;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:link{
+				color: #000000;/*未访问超链接的*/
+				
+			}
+			a:visited{
+				color: ;/*访问后超链接的*/
+				text-decoration: #20B2AA;
+			}
+			a:hover{
+				color: red;/*鼠标悬浮时*/
+			}
+			a:active{
+				color: #008B8B;/*鼠标左键不松开时的颜色*/
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="首页.html">首页</a></li>
+				<li><a href="关于我.html">关于我</a></li>
+				<li><a href="精选作品.html">精选作品</a></li>
+				<li><a href="实验习作.html">实验习作</a></li>
+				<li><a href="联系我.html">联系我</a></li>
+			</ul>
+		</nav>
+		<div class="syxztupian">
+			<div class="zezao">
+				
+				<hgroup>
+					<h2>我的作品</h2>
+					<h2>门神</h2>
+				</hgroup>
+			</div>
+			<div class="yigetu">
+				<img src="img/茶韵.png" alt="茶韵" title="茶韵" width="300"/>
+			</div>
+			<div class="yigetu">
+				<img src="img/凤冠.png" alt="凤冠" title="凤冠" width="300"/>
+			</div>
+			<div class="yigetu">
+				<img src="img/文字放射海报.png" alt="文字放射海报" title="文字放射海报" width="300"/>
+			</div>
+			<div class="yigetu">
+				<img src="img/红色文化1.jpg" alt="红色文化1" width="300" title="红色文化1"/>
+			</div>
+			<div class="yigetu">
+				<img src="img/红色文化2.jpg" alt="红色文化2" width="300" title="红色文化2"/>
+			</div>
+			<div class="yigetu">
+				<img src="img/红色文化3.jpg" alt="红色文化3" width="300" title="红色文化3"/>
+			</div>
+		</div>
+		<footer>
+			&copy;2025 XXX · 视觉传达交互设计 | 山东文化艺术职业学院 · 作品集个人简介 | 保持创造，持续迭代
+		</footer>
+	</body>
+</html>
