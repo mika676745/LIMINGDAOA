@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>联系我</title>
+		<link href="css/目录设置.css" rel="stylesheet" type="text/css"/>
+		<style type="text/css">
+			
+			nav{
+				width: 100%;
+				height: 50px;
+				background-color: #88B788;
+				text-align: center;
+				margin-top: 20px;
+				margin-bottom: 50px;
+			}
+			li{
+				list-style-type: none;
+				height: 100px;
+				padding-left: 80px;/*内边距：左边的高度(字体之间的距离)*/
+				padding-top: -10px;/*内边距：上方的高度（指字体）*/
+				font-size: 35px;/*字体的大小*/
+				display: inline-block;/*横向排列*/
+			}
+			a{
+				text-decoration: none;
+			}
+			a:link{
+				color: #000000;/*未访问超链接的*/
+				
+			}
+			a:visited{
+				color: ;/*访问后超链接的*/
+				text-decoration: #20B2AA;
+			}
+			a:hover{
+				color: red;/*鼠标悬浮时*/
+			}
+			a:active{
+				color: #008B8B;/*鼠标左键不松开时的颜色*/
+			}
+			
+			body{
+				margin: 0;
+				padding: 0;
+				background-image: url("img/背景图5.webp");
+				background-size: cover;/*背景大小：最大限度地利用*/
+				background-repeat: no-repeat;/*背景图像：不重复*/
+				background-attachment: fixed;/*保持背景不动*/
+			}
+			.container{
+				width: 1000px;
+				margin: 80px auto;
+				background-color: rgba(255, 255, 255, 0.8);
+				padding: 70px;
+				border-radius: 50px;
+				box-shadow: 0 10px 30px rgba(0,0,0);
+			}
+			h1{
+				text-align: center;
+				font-size: 50px;
+				color: #696969;
+				font-family: "微软雅黑";
+			}
+			.yinyan{
+				text-align: center;/*居中*/
+				font-size: 20px;
+				color: #808080;
+				margin-bottom: 30px;
+				font-family: "微软雅黑";
+			}
+			form{
+				width: 100%;
+			}
+			label{
+				font-size: 30px;
+				font-family: "微软雅黑";
+				display: block;
+				margin-bottom: 10px;
+			}
+			input{
+				width: 100%;
+				height: 60px;
+				border-radius: 10px;
+				margin-bottom: 20px;
+				background-color: #E9FCE9;
+				font-size: 25px;
+				padding: 20px;
+				border: none;/*消除边框线*/
+				outline: none;
+				font-family: "微软雅黑";
+			}
+			textarea{
+				width: 100%;
+				height: 150px;
+				border-radius: 10px;
+				margin-bottom: 30px;
+				background-color: #DEFADE;
+				font-size: 25px;
+				padding: 20px;
+				border: none;/*消除边框线*/
+				outline: none;
+				font-family: "微软雅黑";
+			}
+			button{
+				width: 100%;
+				height: 50px;
+				background-color: #333;
+				font-size: 30px;
+				color: white;
+				border-radius: 10px;
+				border: none;/*消除边框线*/
+				outline: none;
+			}
+			button:hover{
+				background-color: gold;/* 标记：hover{}/*设置悬停效果*/ */
+			}
+			.contact{
+				text-align: center;
+				margin-top: 70px;
+				font-size: 20px;
+				font-family: "微软雅黑";
+				color: #808080;
+			}
+			footer{
+				text-align: center;/*单元格框的行内内容水平对齐*/
+				padding: 20px;/*内边距*/
+				background-color: rgba(255,255,255,0.7);
+				margin-top: auto;/*外边距的上方：取一个合适的数值*/
+				font-size: 0.9rem;/*字体大小*/
+				color: #555;
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="首页.html">首页</a></li>
+				<li><a href="关于我.html">关于我</a></li>
+				<li><a href="精选作品.html">精选作品</a></li>
+				<li><a href="实验习作.html">实验习作</a></li>
+				<li><a href="联系我.html">联系我</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<h1>联系我</h1>
+			<p class="yinyan">
+				如果你对我的作品感兴趣，欢迎通过以下方式联系我。
+			</p>
+			<form name="lianxi">
+				<label>姓名</label>
+				<input type="text" placeholder="请输入你的名字"/>
+				<label>邮箱</label>
+				<input type="email" placeholder="请输入你的邮箱"/>
+				<label>留言内容</label>
+				<textarea placeholder="请输入留言内容"></textarea>
+				<button>发送信息</button>
+			</form>
+			<div class="contact">
+				<p>邮箱：123456@qq.com</p>
+				<p>电话：123-456-789</p>
+				<p>地址：山东省德州市齐河县旅游大道10号山东文化艺术职业学院</p>
+			</div>
+		</div>
+		<footer>
+			&copy;2025 XXX · 视觉传达交互设计 | 山东文化艺术职业学院 · 作品集个人简介 | 保持创造，持续迭代
+		</footer>
+	</body>
+</html>
